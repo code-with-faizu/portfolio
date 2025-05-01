@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portpolio</title>
+    <style>
+        * {
+                padding: 0;
+                margin: 0;
+        }
+        body {
+                color: white;
+                background-color: rgb(0, 0, 33);
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(15, 15, 92);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            
+            color: lavender;
+            font-size: 1.03rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstsection{
+            display: flex;
+            justify-content:space-around;
+            margin: 80px 0;
+        }
+        .firstsection >div{
+            width: 30%;
+        }
+        .leftsection{
+            /* background-color: aquamarine; */
+            font-size: 3rem;
+        }
+        .rightsection{
+            
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        #element{
+            color: rgb(170, 107, 228);
+        }
+        .secondsection{
+            max-width:80vw;
+            margin: auto;
+        }
+        .secondsection h1{
+            max-width:80vw;
+            margin: auto;
+        }
+        .main hr{background-color: blue;
+
+        }
+        .text-color{
+            color: 
+            rgb(145, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Faizu's Portfolio</div>
+            <div class="rigth">
+                <ul>
+                    <li><a href="/">Home</a>        </li>
+                    <li><a href="/">About</a>        </li>
+                    <li><a href="/">Services</a>     </li>
+                    <li><a href="/">Projects</a>         </li>
+                    <li><a href="/">Contact me </a>      </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="firstsection">
+        <div class="leftsection">Hi, My name is <span class="purple"> Faizan </span>
+            <div>And I am a <span>passionate </span> Web Developer</div> <span id="element"></span>
+        </div>
+        <div class="rightsection"><img src="bg.png" alt="image"></div>
+    </section>
+    <hr>
+    <span text-color>What I have done</span>
+    <div class="secondsection">Work Experience</div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>App Developer</i> sentence.', '&amp; And Smart Designer sentence.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
